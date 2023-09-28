@@ -109,7 +109,7 @@ A Data Contract is a formal agreement detailing the specification of data exchan
    *Includes Data Analysts and Business Intelligence Professionals.*
 
    #### What is Data Contract for you?
-   For Data Analysts and BI Professionals, Data Contract is a guarantee of the quality and consistency of the data they analyze. It provides a clear understanding of the data structure, enabling accurate and insightful analysis.
+   For Data Analysts and BI Professionals, Data Contract is a guarantee of the quality and consistency of the data they analyze. It provides a clear understanding of the data str  ucture, enabling accurate and insightful analysis.
 
    #### Why do you need Data Contract?
    Data Contracts ensure that the data you work with is reliable and of high quality. They allow for more accurate analyses and predictions, which in turn lead to better business decisions and strategies. The clarity and reliability provided by Data Contracts enable you to focus more on deriving insights and less on data cleaning and preparation.
@@ -160,3 +160,7 @@ A Data Contract is a formal agreement detailing the specification of data exchan
    - Maintenance of Operational Data Quality
    - Regular Audits and Checks
    - Cross-Departmental Collaboration
+
+## Further Readings
+
+[https://cnfl.io/schema-registry-101-m... ](https://developer.confluent.io/courses/schema-registry/key-concepts/?utm_source=youtube&utm_medium=video&utm_campaign=tm.devx_ch.cd-schema-registry-101_content.confluent-platform)| Learn about the key concept of using schemas as contracts and how storing them in a schema registry provides what you need to keep client applications in sync with the data changes in your organization or business. 
