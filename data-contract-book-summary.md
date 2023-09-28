@@ -32,34 +32,22 @@ If you’re keen for more details, I totally recommend grabbing the book and, of
 
 Let us first familirized ourselves with some important terminologies.
 
-A **Data Contract** is a formal agreement between data providers and data consumers about the format, quality, and other properties of the data being exchanged. But more on that later. Here are some key concepts and terms related to Data Contract:
+| Term | Definition |
+|------|-----------|
+| **Data Contract** | A formal agreement between data providers and data consumers about the format, quality, and other properties of the data being exchanged.|
+| **Schema**| Defines the structure of the data, including the fields, data types, and relationships. It acts as a blueprint for the data to be exchanged and helps in validating the data against the defined structure.|
+| **Metadata**| Data about the data. It includes information like data lineage, timestamps, data quality metrics, and other details that describe the characteristics and context of the data.|
+| **Data Quality**| A measure of the condition or caliber of data, which considers aspects such as accuracy, completeness, reliability, relevance, and timeliness. Ensuring high data quality is pivotal for making informed decisions.|
+| **Data Lineage**| Visualization of the flow and transformation of data as it moves through the various stages of a system or process. It helps in understanding the origins, movements, and calculations applied to the data.|
+| **Data Provider** | The entity or system that produces or supplies data. Data providers are responsible for ensuring that the data meets the agreed-upon standards and specifications outlined in the data contract.|
+| **Data Generator/Producer/Provider** | These terms are often used interchangeably to describe the entity, system, or process that creates, supplies, or makes data available for use. They are responsible for maintaining the quality, accuracy, and security of the data according to the agreed-upon standards in the data contract. |
+| **Data Consumer** | This entity, application, or individual utilizes the data provided by the data generator/producer/provider. Data consumers use the data for various purposes such as analysis, reporting, or to feed into other systems or processes. They rely on the data contract to understand the format, quality, and characteristics of the data they are consuming. |
+| **Service Level Agreement (SLA)** | A commitment between the data provider and the data consumer on the level of service, including data availability, timeliness, and quality. |
+| **Data Governance** | The practice of managing and organizing data to ensure data quality, security, and compliance with policies and regulations. It involves defining roles, responsibilities, and processes related to data management.|
+| **Versioning**| The practice of keeping multiple versions of data to track changes and updates over time. It helps in managing and controlling modifications to the data. |
+| **Data Validation** | The process of checking and ensuring that the data meets the predefined standards and specifications before it is shared or used.|
 
-1. **Schema**: Defines the structure of the data, including the fields, data types, and relationships. It acts as a blueprint for the data to be exchanged and helps in validating the data against the defined structure.
-
-2. **Metadata**: Data about the data. It includes information like data lineage, timestamps, data quality metrics, and other details that describe the characteristics and context of the data.
-
-3. **Data Quality**: A measure of the condition or caliber of data, which considers aspects such as accuracy, completeness, reliability, relevance, and timeliness. Ensuring high data quality is pivotal for making informed decisions.
-
-4. **Data Lineage**: Visualization of the flow and transformation of data as it moves through the various stages of a system or process. It helps in understanding the origins, movements, and calculations applied to the data.
-
-5. **Data Provider**: The entity or system that produces or supplies data. Data providers are responsible for ensuring that the data meets the agreed-upon standards and specifications outlined in the data contract.
-
-6. **Data Generator/Producer/Provider**: These terms are often used interchangeably to describe the entity, system, or process that creates, supplies, or makes data available for use. They are responsible for maintaining the quality, accuracy, and security of the data according to the agreed-upon standards in the data contract.
-
-7.  **Data Consumer**: This entity, application, or individual utilizes the data provided by the data generator/producer/provider. Data consumers use the data for various purposes such as analysis, reporting, or to feed into other systems or processes. They rely on the data contract to understand the format, quality, and characteristics of the data they are consuming.
-
-8. **Data Consumer**: The entity or system that receives or uses data. Data consumers rely on the data provided to perform analyses, generate insights, or make informed decisions.
-
-9.  **Service Level Agreement (SLA)**: A commitment between the data provider and the data consumer on the level of service, including data availability, timeliness, and quality. 
-
-10. **Data Governance**: The practice of managing and organizing data to ensure data quality, security, and compliance with policies and regulations. It involves defining roles, responsibilities, and processes related to data management.
-
-11. **Versioning**: The practice of keeping multiple versions of data to track changes and updates over time. It helps in managing and controlling modifications to the data.
-
-12. **Data Validation**: The process of checking and ensuring that the data meets the predefined standards and specifications before it is shared or used.
-
-
-## Five-Minute Summary:
+## Five-Minute Summary
 
 ### For a General Audience (Simple Terminology):
 
@@ -68,36 +56,34 @@ A **Data Contract** is a formal agreement between data providers and data consum
 You and your friend decide to exchange letters. You agree on what information to share, how to write it, and when to send it. This agreement is like a data contract.
 
 1. **What's in the Letter?**
-   - **Data Contract**: It details what information is shared. It’s like deciding what stories, news, and updates you’ll put in your letter.
+   - **Data Contract**: It details what information is shared, the structure (**Schema**) and additional details (**Metadata**) about the data. It’s like deciding what stories, news, and updates you’ll put in your letter.
 
 2. **How is it Written?**
-   - **Format and Structure**: Just like you’d write a letter with a greeting, body, and closing, data has a specific way it’s written and structured so that the other person can understand it.
+   - **Format and Structure**: Just like you’d write a letter with a greeting, body, and closing, data has a specific way it’s written and structured so that the other person can understand it. **Versioning** is akin to keeping copies of each letter sent, to track changes over time.
 
 3. **Quality Check:**
-   - **Accuracy and Timeliness**: You want to make sure your letter has the correct information and reaches on time. A data contract ensures the data is accurate and shared promptly.
+   - **Accuracy and Timeliness**: You want to make sure your letter has the correct information (**Data Quality**) and reaches on time (**Service Level Agreement**). **Data Validation** is like proofreading your letter before sending it.
 
 4. **Keeping Promises:**
-   - **Trust**: When both sides keep to the agreement, it builds trust. This is the same with data; the contract ensures everyone is on the same page, building trust between the data sharer and the user.
+   - **Trust**: When both sides keep to the agreement, it builds trust. This is similar to **Data Governance**, ensuring everyone is on the same page, building trust between the **Data Provider** and the **Data Consumer**.
 
 ### For a Technical Audience:
 
 **Data Contract as a Formal Agreement:**
 
-A Data Contract is a formal agreement detailing the specification of data exchanged between a Data Provider and a Data Consumer.
+A Data Contract is a formal agreement detailing the specification of data exchanged between a Data Provider and a Data Consumer. It serves as the backbone for smooth, reliable, and secure data exchange, involving various key concepts:
 
 1. **Schema and Metadata:**
    - **Specification**: The contract defines the schema and metadata of the data, specifying the format, type, and structure, ensuring that data is consistent and usable.
 
 2. **Data Quality and Integrity:**
-   - **Requirements**: It outlines the quality requirements, such as accuracy, completeness, and timeliness, maintaining the reliability and integrity of the data exchanged.
+   - **Requirements**: It outlines the quality requirements, such as accuracy, completeness, and timeliness, maintaining the reliability and integrity of the data exchanged. **Data Lineage** and **Data Validation** are integral to this process.
 
 3. **Compliance and Governance:**
-   - **Standards and Regulations**: The contract addresses compliance with data standards, regulations, and governance policies, mitigating risks associated with data misuse and breaches.
+   - **Standards and Regulations**: The contract addresses compliance with data standards, regulations, and governance policies, mitigating risks associated with data misuse and breaches. **Data Governance** and **Service Level Agreement (SLA)** play crucial roles in ensuring compliance and setting expectations on data availability and quality.
 
 4. **Dispute Resolution:**
-   - **Clarity and Accountability**: It provides a clear framework for resolving disputes and ensuring accountability, fostering trust and collaboration between data producers and consumers.
-
-In conclusion, a Data Contract is essential for ensuring the smooth, reliable, and secure exchange of data between different parties, whether explained simply or technically.
+   - **Clarity and Accountability**: It provides a clear framework for resolving disputes and ensuring accountability, fostering trust and collaboration between data producers and consumers. 
 
 ## Deep Dives
 
@@ -147,7 +133,9 @@ In conclusion, a Data Contract is essential for ensuring the smooth, reliable, a
    Implementing Data Contracts aligns with strategic objectives by ensuring data reliability and compliance. It reduces risks associated with data breaches and misuse, and it fosters trust and collaboration among different organizational units. It allows for better management of data resources and aids in the realization of data-driven goals.
 
    #### How will your workflow look like?
-   With Data Contracts, management and strategy workflows will be more organized and focused on ensuring compliance and strategic alignment. There will be a clear process for establishing, reviewing, and enforcing data contracts, contributing to the overall data governance and strategy of the organization.
+   With Data Contracts, management and strategy workflows will be
+
+ more organized and focused on ensuring compliance and strategic alignment. There will be a clear process for establishing, reviewing, and enforcing data contracts, contributing to the overall data governance and strategy of the organization.
 
    **Key Takeaways for Management and Strategy Teams:**
    - Enforced Data Quality and Governance
@@ -172,5 +160,3 @@ In conclusion, a Data Contract is essential for ensuring the smooth, reliable, a
    - Maintenance of Operational Data Quality
    - Regular Audits and Checks
    - Cross-Departmental Collaboration
-
-
