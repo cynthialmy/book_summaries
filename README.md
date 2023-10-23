@@ -3,7 +3,27 @@
 Hello, my name is Cynthia, and welcome to this summary of "Driving Data Quality with Data Contracts" by Andrew Jones. For the last two weeks, I’ve delved deep into learning about Data Contracts and I’m excited to share this with you.
 
 In this book I’ve discovered how data contracts can solve common problems many companies have with their data. Getting good quality data is a big challenge for everyone, even with a lot of money spent. Interestingly, while each company's data may be different, the challenges are universally similar!
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
+- [Book Summary: Driving Data Quality with Data Contracts](#book-summary-driving-data-quality-with-data-contracts)
+      + [Common Challenges](#common-challenges)
+   * [**Definition**](#definition)
+   * [One**-Minute Summary**](#one-minute-summary)
+      + [**For a Technical Audience**](#for-a-technical-audience)
+- [Deep Dive](#deep-dive)
+   * [Data Contracts: **Two Main Aspects**](#data-contracts-two-main-aspects)
+   * [What are the roles related to Data Contracts?](#what-are-the-roles-related-to-data-contracts)
+   * [What does it mean to you?](#what-does-it-mean-to-you)
+      + [For **Technical Team** 💻](#for-technical-team-)
+      + [For **Business Team** 📈](#for-business-team-)
+      + [For **Compliance Team** ⚖️](#for-compliance-team-)
+      + [For **Strategy and Management Team** 🧐](#for-strategy-and-management-team-)
+- [❓ FAQs](#-faqs)
+- [**About this Summary**](#about-this-summary)
+   * [**Further Readings**](#further-readings)
+      + [Good resources](#good-resources)
+
+<!-- TOC end -->
 ### Common Challenges
 
 Some of the key challenges that most companies face that can be solved by data contracts include:
