@@ -1,5 +1,3 @@
-# book_summaries
-
 # Book Summary: Driving Data Quality with Data Contracts
 
 Hello, my name is Cynthia, and welcome to this review of "Driving Data Quality with Data Contracts" by Andrew Jones! 
